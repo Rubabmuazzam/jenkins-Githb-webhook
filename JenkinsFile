@@ -14,7 +14,8 @@ pipeline {
         }
         stage('Build-frontend') {
             steps {
-                bat 'This satge will build the code.'
+                sh 'Javac Hello.java'
+                sh 'Java Hello'
             }
         }
         stage('Deploy') {
