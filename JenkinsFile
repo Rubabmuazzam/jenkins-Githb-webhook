@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Build-frontend') {
             steps {
-                sh 'Javac Hello.java'
-                sh 'Java Hello'
+                sh 'javac Hello.java'
+                sh 'java Hello'
             }
         }
         stage('Deploy') {
